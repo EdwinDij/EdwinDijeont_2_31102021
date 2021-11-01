@@ -5,30 +5,33 @@
     <link href="Reservia.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8"> 
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-    </style> 
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+        </style>
         </head>
     <body>
         <header>
 
         <!--en-tête--> 
-
+        <img class="logo" src="https://reservia.mathisbarre.com/img/reservia_logo.svg">
             <div class="navigation">
-                <img src="https://reservia.mathisbarre.com/img/reservia_logo.svg">
-                <a class="navbarherberge" href="#hosting">Hébergements</a>
-                <a class="Link-activités" href="#activités">Activités</a>
-                <a class="sign_up" href="#">S'inscire</a>
+                <a class="navbarherberge" id="navbar" href="#hosting">Hébergements</a>
+                <a class="Link-activité" id="navbar" href="#activités">Activités</a>
+                <a class="sign_up" id="navbar" href="#"><strong>S'inscire</strong></a>
             </div>
         </header>
 
-    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
+<section class="recherche">
+    <h1 class="titre">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p class="sous-titre">En plein centre ville ou en pleine nature</p>
 
         <!--Barre de recherche-->
-
+        <form class="barre-de-recherche">
+            <span>
+                
+            </span>
         <input type="text" id="ville,pays" placeholder="Marseille,France">
         <input type="submit" name="Rechercher" value="envoyer">
-
+        </form>
         <!--filtres-->
 
     <div class="Filtres">Filtres
@@ -49,7 +52,8 @@
 
     <div class="info">Plus de 500 logements sont disponibles dans cette ville</div>
         <!--incon-->
- 
+
+    </section>
 
     <section class="hébergement-principaux" id="hosting">
         <h2>Hébergements à Marseille</h2>

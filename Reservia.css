@@ -1,6 +1,7 @@
+@charset "UTF-8";
 body {
-  font-family: 'Raleway', sans-serif;
   margin: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 a {
@@ -12,5 +13,48 @@ a {
 header {
   display: -ms-grid;
   display: grid;
+      grid-template-areas: "logo . navbar button";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1440px;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: button;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navbarherberge {
+  color: #0065FC;
+  border-top: 3px solid #0065FC;
+}
+
+a:hover.Link-activité {
+  color: #0065FC;
+  border-top: 3px solid #0065FC;
+}
+
+.sign_up {
+  color: #0065FC;
+}
+
+#navbar {
+  padding: 25px;
+  margin-bottom: 25px;
+  /*** titre et bar de recher***/
+}
+
+.titre {
+  margin-bottom: -0.5em;
 }
 /*# sourceMappingURL=Reservia.css.map */
