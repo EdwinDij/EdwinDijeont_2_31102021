@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,qBAAqB;EAClC,MAAM,EAAE,CAAC;CAAG;;AAEhB,AAAA,CAAC,CAAC;EACE,KAAK,EAAE,OAAO;EACd,eAAe,EAAE,IAAI;EAGrB,cAAc;CAAE;;AAEpB,AAAA,MAAM,CAAC;EACH,OAAO,EAAE,IAAI;CACc",
+    "sources": [
+        "Reservia.sass"
+    ],
+    "names": [],
+    "file": "Reservia.css"
+}
