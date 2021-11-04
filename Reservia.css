@@ -1,16 +1,22 @@
-@charset "UTF-8";
 body {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'raleway', sans-serif;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-  /***header***/
+  /******** barre de navigation  ********/
 }
 
-header {
+.logo {
+  padding-top: 15px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+nav {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "logo . navbar button";
@@ -18,15 +24,16 @@ header {
       -ms-flex-align: center;
           align-items: center;
   max-width: 1440px;
+  margin: auto;
 }
 
-.navigation {
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   grid-area: button;
@@ -34,27 +41,25 @@ header {
       justify-content: space-around;
 }
 
-.navbarherberge {
-  color: #0065FC;
+.hosting {
   border-top: 3px solid #0065FC;
+  color: #0065FC;
+  padding-top: 40px;
 }
 
-a:hover.Link-activité {
-  color: #0065FC;
+.navbar-activity {
+  padding-top: 40px;
+}
+
+a:hover.navbar-activity {
   border-top: 3px solid #0065FC;
-}
-
-.sign_up {
   color: #0065FC;
 }
 
-#navbar {
-  padding: 25px;
-  margin-bottom: 25px;
-  /*** titre et bar de recher***/
-}
-
-.titre {
-  margin-bottom: -0.5em;
+.subscribe {
+  color: #0065FC;
+  -ms-flex-line-pack: baseline;
+      align-content: baseline;
+  font-style: bold;
 }
 /*# sourceMappingURL=Reservia.css.map */
