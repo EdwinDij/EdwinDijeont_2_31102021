@@ -61,5 +61,71 @@ a:hover.navbar-activity {
   -ms-flex-line-pack: baseline;
       align-content: baseline;
   font-style: bold;
+  /***** zone de recherche *******/
+}
+
+main {
+  margin: 0;
+}
+
+.searchzone {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: 3rem 205px 150px;
+      grid-template-columns: 3rem 205px 150px;
+  margin-bottom: 2rem;
+}
+
+.markmap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 3rem;
+  min-height: 3rem;
+  background-color: #f2f2f2;
+}
+
+i.fas {
+  background-color: #DEEBFF;
+  border: 1px solid #f2f2f2;
+  color: #0065FC;
+}
+
+.textzone {
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  border-right: none;
+  border-left: none;
+  padding: 0rem 1rem;
+  font-size: 1.125rem;
+}
+
+.bouton {
+  position: relative;
+  padding: 0rem 1rem 0rem 1rem;
+  width: auto;
+  height: 3rem;
+  border-radius: 0rem 1rem 1rem 0rem;
+  border: none;
+  color: white;
+  font-size: 1.125rem;
+  background-color: #0065FC;
+  /**** bouton-filtre *****/
+}
+
+.Filtres {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (10rem)[5];
+      grid-template-columns: repeat(5, 10rem);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=Reservia.css.map */
