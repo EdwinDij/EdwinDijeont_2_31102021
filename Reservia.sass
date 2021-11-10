@@ -60,13 +60,7 @@ main
     justify-content: center
     min-width: 3rem
     min-height: 3rem
-    background-color: #f2f2f2
-
-i.fas
-    background-color: #DEEBFF
-    border: 1px solid #f2f2f2  
-    color: #0065FC
-    
+    background-color: #f2f2f2    
     
 .textzone
     border-top: 1px solid #f2f2f2
@@ -75,6 +69,9 @@ i.fas
     border-left: none
     padding: 0rem 1rem
     font-size: 1.125rem
+
+.textzone:focus
+    border: 1.5px solid #0065FC
 
 .bouton
     position: relative
@@ -86,9 +83,42 @@ i.fas
     color: white
     font-size: 1.125rem
     background-color: #0065FC
+    cursor: pointer
 
-    /**** bouton-filtre *****/
-.Filtres
-    display: grid
-    grid-template-columns: repeat(5, 10rem)
-    align-items: center 
+    /**** filter-button *****/
+
+.Filter
+    display: flex
+    align-items: center
+    gap: 1rem
+    font-weight: 
+    font-size: 1.125rem
+    flex-wrap: wrap
+
+.filter-active
+    cursor: pointer
+    border: 2px solid #f2f2f2
+    border-radius: 4rem
+    border-left: none
+
+.filter-button
+    padding-left: 0.5rem
+    padding-right: 1rem
+.icon
+    background-color: #DEEBFF
+    color: blue
+    padding: 1.1rem
+    border-radius: 50%
+
+.fa-info
+    color: #0065FC
+    border: 1px solid #f2f2f2
+    padding: 0.5rem
+    border-radius: 50%
+
+
+
+    
+
+
+
