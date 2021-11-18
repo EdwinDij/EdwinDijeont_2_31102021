@@ -1,5 +1,4 @@
 body {
-  max-width: 1440px;
   margin: 0;
   font-family: 'raleway', sans-serif;
 }
@@ -258,8 +257,6 @@ main {
       -ms-flex-direction: row;
           flex-direction: row;
   cursor: pointer;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
 }
 
 .hosttitle {
@@ -275,19 +272,127 @@ main {
   width: 150px;
   height: 100%;
   border-radius: 1rem 0rem 0rem 1rem;
+  margin-right: auto;
 }
 
 .titlecardpop {
+  margin: 0;
+}
+
+.cardsubtitle {
+  margin: 0;
+}
+
+.cardpop {
   padding-right: 1.5rem;
   margin-top: 0;
 }
 
 .topratingstar {
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
 
 .fa-chart-line {
   margin-left: 12rem;
   /****** Activity ******/
+}
+
+.Activity {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-right-margin: 0;
+}
+
+.headeractivity {
+  margin-top: 4rem;
+}
+
+.Activity {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: auto 14rem 2rem 2rem 2rem 14rem;
+      grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  row-gap: 1.5rem;
+}
+
+.activitycard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px;
+          box-shadow: 0px 0px 10px;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1rem;
+  cursor: pointer;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.imgcard {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.activity1 {
+  grid-columns: 1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 5;
+  grid-row: 2/7;
+}
+
+.activity2 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  grid-row: 2/5;
+}
+
+.activity3 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  grid-row: 5/7;
+}
+
+.activity4 {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 5;
+  grid-row: 2/7;
+}
+
+.activity5 {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+}
+
+.activity6 {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 3;
+  grid-row: 4/7;
 }
 /*# sourceMappingURL=Reservia.css.map */
