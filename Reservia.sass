@@ -1,5 +1,5 @@
 body 
-    
+    max-width: 1440px
     margin: 0
     font-family: 'raleway', sans-serif
 
@@ -46,7 +46,8 @@ a:hover.navbar-activity
     /***** zone de recherche *******/
 
 main
-    margin: 0
+    max-width: 1440px
+    margin: auto
 
 .searchzone
     display: inline-grid
@@ -101,6 +102,11 @@ main
     border-radius: 4rem
     border-left: none
 
+.filter-active:hover
+    background-color: #fafdfd
+    font-weight: bold
+    transform: scale(1.02)
+
 .filter-button
     padding-left: 0.5rem
     padding-right: 1rem
@@ -117,8 +123,100 @@ main
     border-radius: 50%
 
 
+    /***** Main host *****/
 
+.hostingpage
+
+    display: grid
+    grid-template-columns: 6fr 3fr
+    column-gap: 2rem
+    padding-left: 2rem
+    padding-right: 2rem
     
 
+.host
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    column-gap: 2rem
+    row-gap: 2rem
+    background-color: #f2f2f2 
+    border-radius: 2rem
+    padding: 0rem 2rem 1rem
+    
+.headhost
+    grid-column: 1/-1   
 
+.Hostingcard
+    background-color: #fff
+    height: 100%
+    width: 250px
+    box-shadow: 0px 0px 10px
+    background-size: cover
+    box-sizing: border-box
+    padding: 0.5rem
+    border-radius: 1rem
+    cursor: pointer
+    transition-duration: 0.1s
+  
 
+.imghostmain
+    max-width: 100%
+    max-height: 100%
+    border-radius: 1rem 1rem 0rem 0rem
+
+    /******* rating *************/
+
+.fa-star[data-active=true]
+    color: #0065FC
+
+.fa-star[data-active=false]
+    color: #ada9a9cc
+
+    /******** Top Host ********/
+.besthost
+    display: flex
+    background-color: #f2f2f2
+    border-radius: 2rem
+    flex-wrap: wrap
+    row-gap: 1.5rem
+    padding: 0rem 2rem 1rem
+    
+.Hostingcardpop
+    display: flex
+    background-color: #fff
+    height: 150px
+    width: 100%
+    box-shadow: 0px 0px 10px
+    background-size: cover
+    box-sizing: border-box
+    padding: 0.5rem
+    border-radius: 1rem
+    flex-direction: row
+    cursor: pointer
+    flex-basis: 100%
+    
+.hosttitle
+    display: flex
+    margin: 0
+    padding-top: 1.5rem
+    padding-bottom: -1.5rem
+    
+.imghostpop
+    width: 150px
+    height: 100%
+    border-radius: 1rem 0rem 0rem 1rem
+
+.titlecardpop
+    padding-right: 1.5rem
+    margin-top: 0
+
+.topratingstar
+    padding-top: 3rem
+
+.fa-chart-line
+    margin-left: 12rem
+    
+
+    /****** Activity ******/
+
+    
