@@ -49,29 +49,25 @@ main
     margin: auto
 
 .searchzone
-    display: inline-grid
-    grid-template-columns: 3rem 205px 150px
+    display: flex
     margin-bottom: 2rem
 
 
+
 .markmap
-    display: flex
-    align-items: center
-    justify-content: center
-    min-width: 3rem
-    min-height: 3rem
-    background-color: #f2f2f2    
+    padding: 1rem
+    background-color: #f2f2f2
+    border-radius: 1rem 0 0 1rem
+
+
     
 .textzone
     border-top: 1px solid #f2f2f2
     border-bottom: 1px solid #f2f2f2
     border-right: none
     border-left: none
-    padding: 0rem 1rem
+    height: 2.8rem
     font-size: 1.125rem
-
-.textzone:focus
-    border: 1.5px solid #0065FC
 
 .bouton
     position: relative
@@ -253,12 +249,15 @@ main
     width: 100%
     height: 100%
     overflow: hidden
+    font-weight: bold
 
 .imgcard
     height: 100%
     width: 100%
     object-fit: cover
 
+.titlecardactivity
+    margin-left: 1.5rem
 
 .activity1
     grid-columns: 1
@@ -283,3 +282,31 @@ main
 .activity6
     grid-column: 4
     grid-row: 4/7
+
+/***** Footer *****/
+
+footer
+    background-color: #f2f2f2
+    margin-top: 4rem
+
+.abouthost
+    padding: 2rem
+
+.footerabout
+    list-style-type: none
+    padding-top: 1.5rem
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    justify-content: center
+
+ul
+    list-style-type: none
+    cursor: pointer
+    padding: 0
+
+li
+    margin-top: 0.8rem
+li:hover
+    text-decoration: underline
+    font-weight: bold
+
