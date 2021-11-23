@@ -6,8 +6,12 @@ a
     color: inherit
     text-decoration: none
 
-            /******** barre de navigation  ********/
+.cardstyle:hover
+    transition-duration: 0.1s
+    transform: scale(1.02)
 
+            /******** barre de navigation  ********/
+            /******** Desktop Version *******/
 .logo
     padding-top: 15px
     align-items: baseline
@@ -24,6 +28,7 @@ nav
     align-items: baseline
     grid-area: button
     justify-content: space-around
+    cursor: pointer
 
 .hosting
     border-top: 3px solid #0065FC
@@ -40,7 +45,7 @@ a:hover.navbar-activity
 .subscribe
     color: #0065FC
     align-content: baseline
-    font-style: bold
+    font-weight: bold
 
     /***** zone de recherche *******/
 
@@ -150,19 +155,23 @@ main
     background-color: #fff
     height: 100%
     width: 250px
-    box-shadow: 0px 0px 10px
+    box-shadow: 0px 0px 10px #0000007a
     background-size: cover
     box-sizing: border-box
     padding: 0.5rem
     border-radius: 1rem
     cursor: pointer
     transition-duration: 0.1s
+    
   
 
 .imghostmain
+    height: 7rem
+    width: 100%
     max-width: 100%
     max-height: 100%
     border-radius: 1rem 1rem 0rem 0rem
+    object-fit: cover
 
     /******* rating *************/
 
@@ -186,7 +195,7 @@ main
     background-color: #fff
     height: 150px
     width: 100%
-    box-shadow: 0px 0px 10px
+    box-shadow: 0px 0px 10px #0000007a
     background-size: cover
     box-sizing: border-box
     padding: 0.5rem
@@ -204,20 +213,24 @@ main
     width: 150px
     height: 100%
     border-radius: 1rem 0rem 0rem 1rem
-    margin-right: auto
-
-.titlecardpop
-    margin: 0
-
-.cardsubtitle
-    margin: 0
+    padding-right: 0.5rem
 
 .cardpop
-    padding-right: 1.5rem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin: 0
+
+.titlecardpop
+    margin-top: 0
+    margin-bottom: 0
+    font-size: 1.125rem
+
+.cardsubtitle
     margin-top: 0
 
 .topratingstar
-    padding-top: 5rem
+    padding-top: 
 
 .fa-chart-line
     margin-left: 12rem
@@ -245,7 +258,7 @@ main
     display: flex
     flex-direction: column
     background-color: #fff
-    box-shadow: 0px 0px 10px
+    box-shadow: 0px 0px 10px #0000007a
     background-size: cover
     box-sizing: border-box
     border-radius: 1rem

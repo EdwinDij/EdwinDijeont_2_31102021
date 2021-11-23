@@ -6,7 +6,15 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.cardstyle:hover {
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
   /******** barre de navigation  ********/
+  /******** Desktop Version *******/
 }
 
 .logo {
@@ -39,6 +47,7 @@ nav {
   grid-area: button;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  cursor: pointer;
 }
 
 .hosting {
@@ -60,7 +69,7 @@ a:hover.navbar-activity {
   color: #0065FC;
   -ms-flex-line-pack: baseline;
       align-content: baseline;
-  font-style: bold;
+  font-weight: bold;
   /***** zone de recherche *******/
 }
 
@@ -144,9 +153,19 @@ main {
   border-radius: 50%;
 }
 
+.infohost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .fa-info {
   color: #0065FC;
   border: 1px solid #f2f2f2;
+  margin-right: 0.5rem;
   padding: 0.5rem;
   border-radius: 50%;
   /***** Main host *****/
@@ -184,8 +203,8 @@ main {
   background-color: #fff;
   height: 100%;
   width: 250px;
-  -webkit-box-shadow: 0px 0px 10px;
-          box-shadow: 0px 0px 10px;
+  -webkit-box-shadow: 0px 0px 10px #0000007a;
+          box-shadow: 0px 0px 10px #0000007a;
   background-size: cover;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -197,9 +216,13 @@ main {
 }
 
 .imghostmain {
+  height: 7rem;
+  width: 100%;
   max-width: 100%;
   max-height: 100%;
   border-radius: 1rem 1rem 0rem 0rem;
+  -o-object-fit: cover;
+     object-fit: cover;
   /******* rating *************/
 }
 
@@ -231,8 +254,8 @@ main {
   background-color: #fff;
   height: 150px;
   width: 100%;
-  -webkit-box-shadow: 0px 0px 10px;
-          box-shadow: 0px 0px 10px;
+  -webkit-box-shadow: 0px 0px 10px #0000007a;
+          box-shadow: 0px 0px 10px #0000007a;
   background-size: cover;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -258,24 +281,31 @@ main {
   width: 150px;
   height: 100%;
   border-radius: 1rem 0rem 0rem 1rem;
-  margin-right: auto;
-}
-
-.titlecardpop {
-  margin: 0;
-}
-
-.cardsubtitle {
-  margin: 0;
+  padding-right: 0.5rem;
 }
 
 .cardpop {
-  padding-right: 1.5rem;
-  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
 }
 
-.topratingstar {
-  padding-top: 5rem;
+.titlecardpop {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.125rem;
+}
+
+.cardsubtitle {
+  margin-top: 0;
 }
 
 .fa-chart-line {
@@ -314,8 +344,8 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #fff;
-  -webkit-box-shadow: 0px 0px 10px;
-          box-shadow: 0px 0px 10px;
+  -webkit-box-shadow: 0px 0px 10px #0000007a;
+          box-shadow: 0px 0px 10px #0000007a;
   background-size: cover;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
