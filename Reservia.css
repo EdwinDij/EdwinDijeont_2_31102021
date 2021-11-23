@@ -14,63 +14,85 @@ a {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
   /******** barre de navigation  ********/
-  /******** Desktop Version *******/
-}
-
-.logo {
-  padding-top: 15px;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
 }
 
 nav {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "logo . navbar button";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1440px;
-  margin: auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+nav a {
+  padding: 2rem;
+  border-top: 3px solid transparent;
+}
+
+@media (max-width: 1200px) {
+  nav a {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    text-align: center;
+    border-bottom: 3px solid #f2f2f2;
+  }
+}
+
+.navbar a:hover {
+  border-top-color: #0065FC;
+  color: #0065FC;
+}
+
+@media (max-width: 1200px) {
+  .navbar a:hover {
+    border-bottom-color: #0065fc;
+    border-top-color: transparent;
+  }
+}
+
+.logo {
+  margin-right: auto;
+  padding: 0 2rem;
+}
+
+.subscribe {
+  font-weight: bold;
+  color: #0065FC;
+}
+
+.hosting {
+  color: #0065FC;
+  border-top: 3px solid #0065FC;
+}
+
+@media (max-width: 1200px) {
+  .hosting {
+    border-bottom-color: #0065FC;
+    border-top-color: transparent;
+  }
 }
 
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-  grid-area: button;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  cursor: pointer;
 }
 
-.hosting {
-  border-top: 3px solid #0065FC;
-  color: #0065FC;
-  padding-top: 40px;
-}
-
-.navbar-activity {
-  padding-top: 40px;
-}
-
-a:hover.navbar-activity {
-  border-top: 3px solid #0065FC;
-  color: #0065FC;
-}
-
-.subscribe {
-  color: #0065FC;
-  -ms-flex-line-pack: baseline;
-      align-content: baseline;
-  font-weight: bold;
-  /***** zone de recherche *******/
+@media (max-width: 1200px) {
+  .navbar {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    /***** zone de recherche *******/
+  }
 }
 
 main {
@@ -452,5 +474,7 @@ li {
 li:hover {
   text-decoration: underline;
   font-weight: bold;
+  /********** Responsive ************/
+  /************* Nav ****************/
 }
 /*# sourceMappingURL=Reservia.css.map */
