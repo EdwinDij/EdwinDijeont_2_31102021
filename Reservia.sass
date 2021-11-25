@@ -154,7 +154,10 @@ button
     column-gap: 2rem
     padding-left: 2rem
     padding-right: 2rem
-    
+    @media ( max-width:1200px )
+        display: flex
+        flex-direction: column
+        
 
 .host
     display: grid
@@ -164,6 +167,12 @@ button
     background-color: #f2f2f2 
     border-radius: 2rem
     padding: 0rem 2rem 1rem
+    @media ( max-width:1350px )
+        display: flex
+        flex-direction: column
+        width: 100%
+        order: 2
+        background-color: white
     
 .headhost
     grid-column: 1/-1   
@@ -179,8 +188,8 @@ button
     border-radius: 1rem
     cursor: pointer
     transition-duration: 0.1s
-    
-  
+    @media (max-width: 1350px)
+        width: 100%
 
 .imghostmain
     height: 7rem
@@ -198,7 +207,8 @@ button
 .fa-star[data-active=false]
     color: #ada9a9cc
 
-    /******** Top Host ********/
+    /******** Popular Host ********/
+
 .besthost
     display: flex
     background-color: #f2f2f2
@@ -206,7 +216,9 @@ button
     flex-wrap: wrap
     row-gap: 1.5rem
     padding: 0rem 2rem 1rem
-    
+    @media (max-width:1400px)
+        order: 1
+   
 .Hostingcardpop
     display: flex
     background-color: #fff
@@ -219,12 +231,12 @@ button
     border-radius: 1rem
     flex-direction: row
     cursor: pointer
+   
     
 .hosttitle
     display: flex
     margin: 0
     padding-top: 1.5rem
-    padding-bottom: -1.5rem
     
 .imghostpop
     width: 150px
@@ -237,6 +249,7 @@ button
     flex-direction: column
     justify-content: space-between
     margin: 0
+    
 
 .titlecardpop
     margin-top: 0
@@ -255,21 +268,22 @@ button
 
     /****** Activity ******/
 
-        
-.Activity
-   padding-left: 2rem
-   padding-right: 2rem
-    margin: 0
-    
-.headeractivity
-    margin-top: 4rem
-
 .Activity
     display: grid
     grid-template-columns: repeat(4, 1fr)
     grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem
     column-gap: 2rem
     row-gap: 1.5rem
+    padding-left: 2rem
+    padding-right: 2rem
+    margin: 0
+    @media (max-width: 1350px)
+        display: flex
+        flex-direction: column
+
+
+.headeractivity
+    margin-top: 4rem
 
 .activitycard
     display: flex
@@ -317,7 +331,9 @@ button
 .activity6
     grid-column: 4
     grid-row: 4/7
-
+.cardstyle
+    @media ( max-width:1350px )
+        flex-basis: 100%     
 /***** Footer *****/
 
 footer
