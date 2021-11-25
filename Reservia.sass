@@ -20,7 +20,7 @@ nav
 nav a 
     padding: 2rem
     border-top: 3px solid transparent
-    @media (max-width: 1200px)
+    @media (max-width: 900px)
         flex-basis: 50%
         text-align: center
         border-bottom: 3px solid #f2f2f2
@@ -29,7 +29,7 @@ nav a
 .navbar a:hover
     border-top-color: #0065FC
     color: #0065FC
-    @media (max-width: 1200px)
+    @media (max-width: 900px)
         border-bottom-color: #0065fc
         border-top-color: transparent
     
@@ -44,13 +44,13 @@ nav a
 .hosting
     color: #0065FC
     border-top: 3px solid #0065FC
-    @media (max-width: 1200px)
+    @media (max-width: 900px)
         border-bottom-color: #0065FC
         border-top-color: transparent
 
 .navbar
     display: flex
-    @media (max-width: 1200px)
+    @media (max-width: 900px)
         order: 1
         flex-basis: 100%
        
@@ -81,7 +81,7 @@ main
     height: 2.8rem
     font-size: 1.125rem
 
-.bouton
+button
     position: relative
     padding: 0rem 1rem 0rem 1rem
     width: auto
@@ -92,6 +92,16 @@ main
     font-size: 1.125rem
     background-color: #0065FC
     cursor: pointer
+
+.searchbutton
+    @media ( max-width: 750px )
+        display: none
+
+.fa-search
+    color: #0065FC
+    @media ( max-width: 750px)
+        color: white
+
 
     /**** filter-button *****/
 

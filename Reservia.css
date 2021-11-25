@@ -35,7 +35,7 @@ nav a {
   border-top: 3px solid transparent;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   nav a {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -49,7 +49,7 @@ nav a {
   color: #0065FC;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .navbar a:hover {
     border-bottom-color: #0065fc;
     border-top-color: transparent;
@@ -71,7 +71,7 @@ nav a {
   border-top: 3px solid #0065FC;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .hosting {
     border-bottom-color: #0065FC;
     border-top-color: transparent;
@@ -84,7 +84,7 @@ nav a {
   display: flex;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .navbar {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -122,7 +122,7 @@ main {
   font-size: 1.125rem;
 }
 
-.bouton {
+button {
   position: relative;
   padding: 0rem 1rem 0rem 1rem;
   width: auto;
@@ -133,7 +133,23 @@ main {
   font-size: 1.125rem;
   background-color: #0065FC;
   cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .searchbutton {
+    display: none;
+  }
+}
+
+.fa-search {
+  color: #0065FC;
   /**** filter-button *****/
+}
+
+@media (max-width: 750px) {
+  .fa-search {
+    color: white;
+  }
 }
 
 .Filter {
