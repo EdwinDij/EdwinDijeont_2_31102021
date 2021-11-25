@@ -36,6 +36,9 @@ nav a
 .logo
     margin-right: auto
     padding: 0 2rem
+    @media (max-width: 450px)
+        padding: 0
+        margin: 0
 
 .subscribe
     font-weight: bold
@@ -167,7 +170,7 @@ button
     background-color: #f2f2f2 
     border-radius: 2rem
     padding: 0rem 2rem 1rem
-    @media ( max-width:1350px )
+    @media ( max-width:1200px )
         display: flex
         flex-direction: column
         width: 100%
@@ -271,15 +274,17 @@ button
 .Activity
     display: grid
     grid-template-columns: repeat(4, 1fr)
-    grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem
+    grid-template-rows: auto    
     column-gap: 2rem
     row-gap: 1.5rem
     padding-left: 2rem
     padding-right: 2rem
     margin: 0
-    @media (max-width: 1350px)
-        display: flex
-        flex-direction: column
+    @media (max-width: 700px)
+        row-gap: 2rem
+        grid-template-columns: 1fr
+        grid-template-row: auto 12rem 12rem 12rem 12rem 12rem 12rem
+
 
 
 .headeractivity
@@ -299,7 +304,7 @@ button
     height: 100%
     overflow: hidden
     font-weight: bold
-
+   
 .imgcard
     height: 100%
     width: 100%
@@ -310,30 +315,49 @@ button
 
 .activity1
     grid-columns: 1
-    grid-row: 2/7 
+    grid-row: 2/7
+    @media (max-width: 700px)
+        grid-column: 1
+        grid-row: 2/3
+    
 
 .activity2
     grid-column: 2
     grid-row: 2/5
+    @media (max-width: 700px)
+        grid-column: 1
+        grid-row: 3/4
+    
 
 .activity3
     grid-column: 2
     grid-row: 5/7
+    @media (max-width: 700px)
+        grid-column: 1
+        grid-row: 4/5
 
 .activity4
     grid-column: 3
     grid-row: 2/7
+    @media (max-width: 700px)
+        grid-column: 1
+        grid-row: 5/6
 
 .activity5
     grid-column: 4
     grid-row: 2/4
+    @media (max-width: 700px)
+        grid-column: 1
+        grid-row: 6/7
 
 .activity6
     grid-column: 4
     grid-row: 4/7
-.cardstyle
-    @media ( max-width:1350px )
-        flex-basis: 100%     
+    @media (max-width: 700px)
+        grid-row: 7/8
+        grid-column: 1  
+    
+        
 /***** Footer *****/
 
 footer
@@ -349,6 +373,8 @@ footer
     display: grid
     grid-template-columns: repeat(3,1fr)
     justify-content: center
+    @media (max-width:560px)
+        grid-template-columns: 1fr
 
 ul
     list-style-type: none

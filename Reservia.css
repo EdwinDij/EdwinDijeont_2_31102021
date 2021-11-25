@@ -61,6 +61,13 @@ nav a {
   padding: 0 2rem;
 }
 
+@media (max-width: 450px) {
+  .logo {
+    padding: 0;
+    margin: 0;
+  }
+}
+
 .subscribe {
   font-weight: bold;
   color: #0065FC;
@@ -220,6 +227,18 @@ button {
   padding-right: 2rem;
 }
 
+@media (max-width: 1200px) {
+  .hostingpage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .host {
   display: -ms-grid;
   display: grid;
@@ -231,6 +250,23 @@ button {
   background-color: #f2f2f2;
   border-radius: 2rem;
   padding: 0rem 2rem 1rem;
+}
+
+@media (max-width: 1200px) {
+  .host {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    background-color: white;
+  }
 }
 
 .headhost {
@@ -253,6 +289,12 @@ button {
           transition-duration: 0.1s;
 }
 
+@media (max-width: 1350px) {
+  .Hostingcard {
+    width: 100%;
+  }
+}
+
 .imghostmain {
   height: 7rem;
   width: 100%;
@@ -270,7 +312,7 @@ button {
 
 .fa-star[data-active=false] {
   color: #ada9a9cc;
-  /******** Top Host ********/
+  /******** Popular Host ********/
 }
 
 .besthost {
@@ -283,6 +325,14 @@ button {
       flex-wrap: wrap;
   row-gap: 1.5rem;
   padding: 0rem 2rem 1rem;
+}
+
+@media (max-width: 1400px) {
+  .besthost {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 .Hostingcardpop {
@@ -312,7 +362,6 @@ button {
   display: flex;
   margin: 0;
   padding-top: 1.5rem;
-  padding-bottom: -1.5rem;
 }
 
 .imghostpop {
@@ -352,25 +401,31 @@ button {
 }
 
 .Activity {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-right-margin: 0;
-}
-
-.headeractivity {
-  margin-top: 4rem;
-}
-
-.Activity {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: auto 14rem 2rem 2rem 2rem 14rem;
-      grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   -webkit-column-gap: 2rem;
           column-gap: 2rem;
   row-gap: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .Activity {
+    row-gap: 2rem;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-template-row: auto 12rem 12rem 12rem 12rem 12rem 12rem;
+  }
+}
+
+.headeractivity {
+  margin-top: 4rem;
 }
 
 .activitycard {
@@ -415,12 +470,32 @@ button {
   grid-row: 2/7;
 }
 
+@media (max-width: 700px) {
+  .activity1 {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+}
+
 .activity2 {
   -ms-grid-column: 2;
   grid-column: 2;
   -ms-grid-row: 2;
   -ms-grid-row-span: 3;
   grid-row: 2/5;
+}
+
+@media (max-width: 700px) {
+  .activity2 {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
 }
 
 .activity3 {
@@ -431,12 +506,32 @@ button {
   grid-row: 5/7;
 }
 
+@media (max-width: 700px) {
+  .activity3 {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+  }
+}
+
 .activity4 {
   -ms-grid-column: 3;
   grid-column: 3;
   -ms-grid-row: 2;
   -ms-grid-row-span: 5;
   grid-row: 2/7;
+}
+
+@media (max-width: 700px) {
+  .activity4 {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5/6;
+  }
 }
 
 .activity5 {
@@ -447,12 +542,32 @@ button {
   grid-row: 2/4;
 }
 
+@media (max-width: 700px) {
+  .activity5 {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
+    grid-row: 6/7;
+  }
+}
+
 .activity6 {
   -ms-grid-column: 4;
   grid-column: 4;
   -ms-grid-row: 4;
   -ms-grid-row-span: 3;
   grid-row: 4/7;
+}
+
+@media (max-width: 700px) {
+  .activity6 {
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 1;
+    grid-row: 7/8;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
 }
 
 /***** Footer *****/
@@ -475,6 +590,13 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 560px) {
+  .footerabout {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 ul {
