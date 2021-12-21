@@ -40,7 +40,7 @@ nav a {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     text-align: center;
-    border-bottom: 3px solid #f2f2f2;
+    border-bottom: 3px solid transparent
   }
 }
 
@@ -107,6 +107,9 @@ main {
   margin: auto;
 }
 
+.search  {
+  margin-left: 2rem;
+}
 .searchzone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,6 +130,12 @@ main {
   border-left: none;
   height: 2.8rem;
   font-size: 1.125rem;
+  padding-left: 1rem;
+  font-weight: bolder ;
+}
+
+::placeholder {
+  color: black;
 }
 
 button {
@@ -140,6 +149,11 @@ button {
   font-size: 1.125rem;
   background-color: #0065FC;
   cursor: pointer;
+}
+@media (max-width: 750px) {
+  button{
+    border-radius: 0.9rem;
+  }
 }
 
 @media (max-width: 750px) {
@@ -159,6 +173,10 @@ button {
   }
 }
 
+.filter-section {
+  width: 100%;
+  font-weight: bolder;
+}
 .Filter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -189,6 +207,7 @@ button {
 .filter-button {
   padding-left: 0.5rem;
   padding-right: 1rem;
+  font-weight: bolder;
 }
 
 .icon {
