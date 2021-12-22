@@ -58,7 +58,7 @@ nav a {
 
 .logo {
   margin-right: auto;
-  padding: 0 2rem;
+  padding: 0 3.6rem;
 }
 
 @media (max-width: 450px) {
@@ -98,6 +98,7 @@ nav a {
             order: 1;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+        
     /***** zone de recherche *******/
   }
 }
@@ -109,6 +110,11 @@ main {
 
 .search  {
   margin-left: 2rem;
+}
+@media (max-width: 750px) {
+  .search {
+    margin-left: 1rem;
+  }
 }
 .searchzone {
   display: -webkit-box;
@@ -134,6 +140,7 @@ main {
   font-weight: bolder ;
 }
 
+
 ::placeholder {
   color: black;
 }
@@ -156,6 +163,9 @@ button {
   }
 }
 
+.searchbutton {
+  font-weight: bolder;
+}
 @media (max-width: 750px) {
   .searchbutton {
     display: none;
@@ -164,6 +174,7 @@ button {
 
 .fa-search {
   color: #0065FC;
+
   /**** filter-button *****/
 }
 
@@ -174,8 +185,12 @@ button {
 }
 
 .filter-section {
-  width: 100%;
   font-weight: bolder;
+}
+@media (max-width: 750px) {
+  .filter-section {
+    width: 100%
+  }
 }
 .Filter {
   display: -webkit-box;
@@ -232,8 +247,10 @@ button {
   margin-right: 0.5rem;
   padding: 0.5rem;
   border-radius: 50%;
-  /***** Main host *****/
 }
+
+  /***** Main host *****/
+
 
 .hostingpage {
   display: -ms-grid;
@@ -295,13 +312,13 @@ button {
 .Hostingcard {
   background-color: #fff;
   height: 100%;
-  width: 250px;
+  width: 273px;
   -webkit-box-shadow: 0px 0px 10px #0000007a;
           box-shadow: 0px 0px 10px #0000007a;
   background-size: cover;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-radius: 1rem;
   cursor: pointer;
   -webkit-transition-duration: 0.1s;
@@ -352,6 +369,9 @@ button {
         -ms-flex-order: 1;
             order: 1;
   }
+}
+.titlecard {
+  margin: 0.3rem 0 0.3rem 0.5rem;
 }
 
 .Hostingcardpop {
