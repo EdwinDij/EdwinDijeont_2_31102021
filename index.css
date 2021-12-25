@@ -233,6 +233,7 @@ button {
 }
 
 .infohost {
+  margin: 1.5rem 0 1.5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,9 +340,18 @@ button {
   border-radius: 1rem 1rem 0rem 0rem;
   -o-object-fit: cover;
      object-fit: cover;
-  /******* rating *************/
 }
 
+.more {
+  font-size: 1.2rem;
+  margin: 0.6rem 0 2.6rem 0;
+}
+ 
+  /******* rating *************/
+
+.ratingstar {
+  margin-left: 0.5rem;
+}
 .fa-star[data-active=true] {
   color: #0065FC;
 }
@@ -360,7 +370,7 @@ button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   row-gap: 1.5rem;
-  padding: 0rem 2rem 1rem;
+  padding: 0 0 2rem 2rem;
 }
 
 @media (max-width: 1400px) {
@@ -380,13 +390,13 @@ button {
   display: flex;
   background-color: #fff;
   height: 150px;
-  width: 100%;
+  width: 90%;
   -webkit-box-shadow: 0px 0px 10px #0000007a;
           box-shadow: 0px 0px 10px #0000007a;
   background-size: cover;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-radius: 1rem;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -399,8 +409,10 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
+  margin: 1.5rem 0 0  0;
   padding-top: 1.5rem;
+  width: max-content;
+  font-size: 1.35rem;
 }
 
 .imghostpop {
