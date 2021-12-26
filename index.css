@@ -375,6 +375,7 @@ button {
 
 @media (max-width: 1400px) {
   .besthost {
+    margin: 0 -5rem 0 0;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -416,10 +417,11 @@ button {
 }
 
 .imghostpop {
-  width: 150px;
+  width: 38%;
   height: 100%;
   border-radius: 1rem 0rem 0rem 1rem;
   padding-right: 0.5rem;
+  object-fit: cover;
 }
 
 .cardpop {
@@ -434,6 +436,7 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0;
+  padding: 0 1rem 0 0.5rem
 }
 
 .titlecardpop {
