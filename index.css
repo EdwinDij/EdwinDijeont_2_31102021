@@ -175,7 +175,7 @@ button {
 .search-button {
   font-weight: bolder;
 }
-@media (max-width: 750px) {
+@media (max-width: 751px) {
   .search-button {
     display: none;
   }
@@ -183,9 +183,15 @@ button {
 
 .fa-search {
   color: #0065FC;
+}
+
+@media (min-width: 751px) {
+  .search-mobile {
+    display: none;
+  }
+}
 
   /**** filter-button *****/
-}
 
 @media (max-width: 750px) {
   .fa-search {
@@ -247,19 +253,19 @@ button {
 
 .info-host {
   margin: 1.5rem 0 1.5rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
-.fa-info {
+.testinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #0065FC;
   border: 1px solid #f2f2f2;
   margin-right: 0.5rem;
-  padding: 0.5rem;
+  width: 33px;
+  height: 33px;
   border-radius: 50%;
 }
 
@@ -328,7 +334,7 @@ button {
 .hosting-card {
   background-color: #fff;
   height: 100%;
-  width: 273px;
+  width: 258px;
   -webkit-box-shadow: 0px 0px 10px #0000007a;
           box-shadow: 0px 0px 10px #0000007a;
   background-size: cover;
@@ -363,9 +369,15 @@ button {
 }
  
   /******* rating *************/
+.toprating-star {
+  font-size: 13px;
+  margin-bottom: 0.3rem;
+}
 
 .rating-star {
   margin-left: 0.5rem;
+  margin-bottom: 0.3;
+  font-size: 13px;
 }
 .fa-star[data-active=true] {
   color: #0065FC;
@@ -375,29 +387,21 @@ button {
   color: #ada9a9cc;
   /******** Popular Host ********/
 }
-@media (max-width: 760px) {
-.best-head-host {
-  position: relative;
-}
+
+.wrapper-best-host {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
 }
 
 .best-host {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #f2f2f2;
-  border-radius: 2rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  row-gap: 1.5rem;
-  padding: 0 0 2rem 2rem;
+background-color: #f2f2f2;
+border-radius: 2rem;
 }
 
 @media (max-width: 500px) {
   .best-host {
     border-radius: 0;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
             order: 1;
             margin: 0rem -2rem 0rem -2rem;
             padding: 0 0 2rem 3rem;
@@ -409,33 +413,23 @@ button {
 }
 
 .hosting-card-pop {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: #fff;
   height: 150px;
-  width: 90%;
-  -webkit-box-shadow: 0px 0px 10px #0000007a;
-          box-shadow: 0px 0px 10px #0000007a;
+  width: 100%%;
+  box-shadow: 0px 0px 10px #0000007a;
   background-size: cover;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0.3rem;
   border-radius: 1rem;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   cursor: pointer;
 }
 
 .host-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  margin: 1.5rem 0 1rem  0;
+  margin: 0.5rem 0 0 0;
   padding-top: 1.5rem;
-  width: max-content;
   font-size: 1.35rem;
 }
 
@@ -472,10 +466,6 @@ button {
   margin-top: 0;
 }
 
-.fa-chart-line {
-  padding-left: 11rem;
-
-}
   @media (max-witdh: 500px) {
     .fa-chart-line {
       margin-left: 0;
