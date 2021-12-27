@@ -8,7 +8,7 @@ a {
   text-decoration: none;
 }
 
-.cardstyle:hover {
+.card-style:hover {
   -webkit-transition-duration: 0.1s;
           transition-duration: 0.1s;
   -webkit-transform: scale(1.02);
@@ -116,7 +116,7 @@ main {
     margin-left: 1rem;
   }
 }
-.searchzone {
+.search-zone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,7 +129,7 @@ main {
   border-radius: 1rem 0 0 1rem;
 }
 
-.textzone {
+.text-zone {
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
   border-right: none;
@@ -163,11 +163,11 @@ button {
   }
 }
 
-.searchbutton {
+.search-button {
   font-weight: bolder;
 }
 @media (max-width: 750px) {
-  .searchbutton {
+  .search-button {
     display: none;
   }
 }
@@ -232,7 +232,7 @@ button {
   border-radius: 50%;
 }
 
-.infohost {
+.info-host {
   margin: 1.5rem 0 1.5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -253,7 +253,7 @@ button {
   /***** Main host *****/
 
 
-.hostingpage {
+.hosting-page {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 6fr 3fr;
@@ -265,7 +265,7 @@ button {
 }
 
 @media (max-width: 1200px) {
-  .hostingpage {
+  .hosting-page {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -306,11 +306,11 @@ button {
   }
 }
 
-.headhost {
+.head-host {
   grid-column: 1/-1;
 }
 
-.Hostingcard {
+.hosting-card {
   background-color: #fff;
   height: 100%;
   width: 273px;
@@ -327,12 +327,12 @@ button {
 }
 
 @media (max-width: 1350px) {
-  .Hostingcard {
+  .hosting-card {
     width: 100%;
   }
 }
 
-.imghostmain {
+.img-host-main {
   height: 7rem;
   width: 100%;
   max-width: 100%;
@@ -349,7 +349,7 @@ button {
  
   /******* rating *************/
 
-.ratingstar {
+.rating-star {
   margin-left: 0.5rem;
 }
 .fa-star[data-active=true] {
@@ -361,7 +361,7 @@ button {
   /******** Popular Host ********/
 }
 
-.besthost {
+.best-host {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -381,11 +381,11 @@ button {
             order: 1;
   }
 }
-.titlecard {
+.title-card {
   margin: 0.3rem 0 0.3rem 0.5rem;
 }
 
-.Hostingcardpop {
+.hosting-card-pop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,7 +406,7 @@ button {
   cursor: pointer;
 }
 
-.hosttitle {
+.host-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,7 +416,7 @@ button {
   font-size: 1.35rem;
 }
 
-.imghostpop {
+.img-host-pop {
   width: 38%;
   height: 100%;
   border-radius: 1rem 0rem 0rem 1rem;
@@ -424,7 +424,7 @@ button {
   object-fit: cover;
 }
 
-.cardpop {
+.card-pop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -439,22 +439,22 @@ button {
   padding: 0 1rem 0 0.5rem
 }
 
-.titlecardpop {
+.title-card-pop {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 1.125rem;
 }
 
-.cardsubtitle {
+.card-subtitle {
   margin-top: 0;
 }
 
 .fa-chart-line {
   margin-left: 12rem;
-  /****** Activity ******/
+  /****** activity ******/
 }
 
-.Activity {
+.activity {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -470,19 +470,19 @@ button {
 }
 
 @media (max-width: 700px) {
-  .Activity {
+  .activity {
     row-gap: 2rem;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    grid-template-row: auto 12rem 12rem 12rem 12rem 12rem 12rem;
+    grid-template-rows: auto 12rem 12rem;
   }
 }
 
-.headeractivity {
+.header-activity {
   margin-top: 4rem;
 }
 
-.activitycard {
+.activity-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -505,20 +505,20 @@ button {
   position: relative;
 }
 
-.imgcard {
+.img-card-activity {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.activityplacement {
+.activity-placement {
   position: absolute;
   bottom: 0px;
   background-color: #fff;
   width: 100%;
 }
-.titlecardactivity {
+.title-card-activity {
   margin-left: 1.5rem;
 }
 
@@ -634,11 +634,11 @@ footer {
   margin-top: 4rem;
 }
 
-.abouthost {
+.about-host {
   margin: 0rem 0 2rem 3rem;
 }
 
-.footerabout {
+.footer-about {
   list-style-type: none;
   padding-top: 1.5rem;
   display: -ms-grid;
@@ -651,7 +651,7 @@ footer {
 }
 
 @media (max-width: 560px) {
-  .footerabout {
+  .footer-about {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
