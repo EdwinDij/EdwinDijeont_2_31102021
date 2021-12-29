@@ -392,6 +392,13 @@ button {
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
+  padding: 0 2rem 0 2rem;
+}
+
+.best-head-host {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 .best-host {
