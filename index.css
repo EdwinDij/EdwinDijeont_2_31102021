@@ -154,7 +154,7 @@ nav a {
   color: black;
 }
 
-button {
+.button {
   position: relative;
   padding: 0rem 1rem 0rem 1rem;
   width: auto;
