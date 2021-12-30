@@ -96,6 +96,7 @@ nav a {
 .search  {
   margin-left: 2rem;
 }
+
 @media (max-width: 768px) {
   .search {
     margin-left: 1rem;
@@ -276,10 +277,11 @@ nav a {
   border-radius: 1rem;
   cursor: pointer;
 }
-.hosting-card:hover{
+.hosting-card:hover {
   transition-duration: 0.1s;
   transform: scale(1.02);
 }
+
 @media (max-width: 1024px) {
   .hosting-card {
     width: 100%;
@@ -364,7 +366,6 @@ border-radius: 2rem;
   flex-direction: row;
   cursor: pointer;
 }
-
 .hosting-card-pop:hover {
   transition-duration: 0.1s;
   transform: scale(1.02);
@@ -437,12 +438,11 @@ border-radius: 2rem;
   box-sizing: border-box;
   border-radius: 1rem;
   cursor: pointer;
-  transition-duration: 0.1s;
   overflow: hidden;
   font-weight: bold;
   position: relative;
 }
-.activity-card:hover {
+.activity-card:hover{
   transition-duration: 0.1s;
   transform: scale(1.02);
 }
