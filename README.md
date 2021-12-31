@@ -3,7 +3,7 @@
 Deuxième projet du parcours développeur web chez OpenClassrooms. L'objectif est d'intégrer la maquette d'un site de planification de vacance nommé "Reservia" ! En version desktop: [Desktop - 1 reservia](https://user-images.githubusercontent.com/91846586/147763911-119914ae-e1a0-45bf-b6bf-5b705a49f0af.png) et aussi en version mobile (maquette Iphone8):
 [iPhone 8 - 1 reservia](https://user-images.githubusercontent.com/91846586/147763997-2fc4d85f-665c-42ad-abfc-de1034a8270c.png)
 
-##Éléments fournis par l'entreprise virtuelle.
+## Éléments fournis par l'entreprise virtuelle.
 
 La maquette pour les résolutions ordinateur et téléphone nous est donné.
 Toutes les images présentes sur le site sont aussi livrés en format sm, md, l & xl.
