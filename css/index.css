@@ -1,6 +1,6 @@
 body {
   margin: auto;
-  font-family: 'raleway', sans-serif;
+  font-family: "raleway", sans-serif;
 }
 
 a {
@@ -27,7 +27,7 @@ main {
     margin-left: 0%;
   }
 }
-  /******** barre de navigation  ********/
+/******** barre de navigation  ********/
 
 nav {
   display: flex;
@@ -54,8 +54,8 @@ nav a {
   }
 }
 .navbar a:hover {
-  border-top-color: #0065FC;
-  color: #0065FC;
+  border-top-color: #0065fc;
+  color: #0065fc;
 }
 
 @media (max-width: 768px) {
@@ -72,22 +72,22 @@ nav a {
 
 .subscribe {
   font-weight: bold;
-  color: #0065FC;
+  color: #0065fc;
   text-align: end;
 }
 
 .hosting {
-  color: #0065FC;
-  border-top: 3px solid #0065FC;
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
 }
 
 @media (max-width: 768px) {
   .hosting {
-    border-bottom-color: #0065FC;
+    border-bottom-color: #0065fc;
     border-top-color: transparent;
   }
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .navbar-activity {
     border-bottom: 3px solid ghostwhite;
   }
@@ -102,11 +102,10 @@ nav a {
     flex-basis: 100%;
   }
 }
-        
-    /***** zone de recherche *******/
- 
 
-.search  {
+/***** zone de recherche *******/
+
+.search {
   margin-left: 2rem;
 }
 
@@ -148,11 +147,11 @@ input::placeholder {
   border: none;
   color: white;
   font-size: 1.125rem;
-  background-color: #0065FC;
+  background-color: #0065fc;
   cursor: pointer;
 }
 @media (max-width: 768px) {
-  .button{
+  .button {
     border-radius: 0.9rem;
     margin-left: -1rem;
   }
@@ -172,14 +171,14 @@ input::placeholder {
     display: none;
   }
 }
-  /**** filter-button *****/
+/**** filter-button *****/
 
 .filter-section {
   font-weight: bolder;
 }
 @media (max-width: 768px) {
   .filter-section {
-    width: 100%
+    width: 100%;
   }
 }
 .filter {
@@ -190,8 +189,8 @@ input::placeholder {
   flex-wrap: wrap;
 }
 @media (max-width: 768px) {
-  .filter{
-   gap: 1rem; 
+  .filter {
+    gap: 1rem;
   }
 }
 .filter-active {
@@ -214,7 +213,7 @@ input::placeholder {
 }
 
 .icon {
-  background-color: #DEEBFF;
+  background-color: #deebff;
   color: blue;
   padding: 1.1rem;
   border-radius: 50%;
@@ -225,12 +224,16 @@ input::placeholder {
   display: flex;
   align-items: center;
 }
-
+@media (max-width: 768px) {
+  .info-host {
+    align-items: baseline;
+  }
+}
 .info-icone {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0065FC;
+  color: #0065fc;
   border: 1px solid #f2f2f2;
   margin-right: 0.5rem;
   width: 30px;
@@ -238,13 +241,13 @@ input::placeholder {
   border-radius: 50%;
 }
 @media (max-width: 768px) {
-  .info-icone{
-    width: 21px;
-    height: 16px;
+  .info-icone {
+    width: 24px;
+    height: 20px;
   }
 }
 
-  /***** Main host *****/
+/***** Main host *****/
 
 .hosting-page {
   display: grid;
@@ -278,7 +281,7 @@ input::placeholder {
     width: 90%;
     order: 2;
     background-color: white;
-    padding: 0 0 0 1.5rem ;
+    padding: 0 0 0 1.5rem;
   }
 }
 
@@ -321,8 +324,8 @@ input::placeholder {
   font-size: 1.2rem;
   margin: 0.6rem 0 2.6rem 0;
 }
- 
-  /******* rating *************/
+
+/******* rating *************/
 
 .toprating-star {
   font-size: 13px;
@@ -333,15 +336,14 @@ input::placeholder {
   margin-bottom: 0.4rem;
   font-size: 13px;
 }
-.fa-star[data-active=true] {
-  color: #0065FC;
+.fa-star[data-active="true"] {
+  color: #0065fc;
 }
 
-.fa-star[data-active=false] {
+.fa-star[data-active="false"] {
   color: #ada9a9cc;
 }
-  /******** Popular Host ********/
-
+/******** Popular Host ********/
 
 .wrapper-best-host {
   display: flex;
@@ -357,15 +359,15 @@ input::placeholder {
 }
 
 .best-host {
-background-color: #f2f2f2;
-border-radius: 2rem;
+  background-color: #f2f2f2;
+  border-radius: 2rem;
 }
 
 @media (max-width: 1024px) {
   .best-host {
     border-radius: 0;
     order: 1;
-    margin-right: 0rem
+    margin-right: 0rem;
   }
 }
 
@@ -411,7 +413,7 @@ border-radius: 2rem;
   flex-direction: column;
   justify-content: space-evenly;
   margin: 0;
-  padding: 0 1rem 0 0.5rem
+  padding: 0 1rem 0 0.5rem;
 }
 
 .title-card-pop {
@@ -424,8 +426,7 @@ border-radius: 2rem;
   margin-top: 0;
 }
 
-  /****** activity ******/
-
+/****** activity ******/
 
 .activity {
   display: grid;
@@ -451,7 +452,7 @@ border-radius: 2rem;
   margin-top: 4rem;
 }
 @media (max-width: 768px) {
-  .header-activity{
+  .header-activity {
     margin-top: 0;
   }
 }
@@ -468,7 +469,7 @@ border-radius: 2rem;
   font-weight: bold;
   position: relative;
 }
-.activity-card:hover{
+.activity-card:hover {
   transition-duration: 0.1s;
   transform: scale(1.02);
 }
@@ -518,7 +519,7 @@ border-radius: 2rem;
 }
 
 @media (max-width: 768px) {
-.activity3 {
+  .activity3 {
     grid-column: 1;
     grid-row: 4/5;
   }
@@ -578,7 +579,7 @@ footer {
   justify-content: center;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .footer-about {
     grid-template-columns: 1fr;
   }
