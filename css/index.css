@@ -237,9 +237,14 @@ input::placeholder {
   height: 30px;
   border-radius: 50%;
 }
+@media (max-width: 768px) {
+  .info-icone{
+    width: 21px;
+    height: 16px;
+  }
+}
 
   /***** Main host *****/
-
 
 .hosting-page {
   display: grid;
