@@ -21,7 +21,7 @@ La police est "Raleway"
 - Séparer le HTML et le CSS et à organiser ton dossier de rendu.
 - Versionner le code avec Git, et ce dès les premières lignes de code.
 - Déployer la page sur GitHub Pages ou GitLab Pages.
-- Aucune erreur ou alerte au validateur W3C: https://validator.w3.org/nu/?doc=https%3A%2F%2Fedwindij.github.io%2FReserviadijeont%2F
+- Aucune erreur ou alerte au validateur W3C: https://edwindij.github.io/version-avant-29-09-21-EdwinDijeont_2_31102021/
 
 ## Réalisation du projet
 
