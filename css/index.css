@@ -76,7 +76,7 @@ nav a {
   text-align: end;
 }
 
-.hosting {
+.hosting:hover {
   color: #0065fc;
   border-top: 3px solid #0065fc;
 }
@@ -104,11 +104,14 @@ nav a {
 }
 
 /***** zone de recherche *******/
-
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5em;
+  }
+}
 .search {
   margin-left: 2rem;
 }
-
 @media (max-width: 768px) {
   .search {
     margin-left: 1rem;
@@ -169,6 +172,12 @@ input::placeholder {
 @media (min-width: 769px) {
   .search-mobile {
     display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .header-search {
+    padding-right: 1%;
   }
 }
 /**** filter-button *****/
@@ -292,7 +301,6 @@ input::placeholder {
 .hosting-card {
   background-color: #fff;
   height: 100%;
-  width: 258px;
   box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 20%);
   background-size: cover;
   box-sizing: border-box;
@@ -568,7 +576,7 @@ footer {
 }
 
 .about-host {
-  margin: 0rem 0 2rem 3rem;
+  margin: 0rem 0 2rem 2rem;
 }
 
 .footer-about {
