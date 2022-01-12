@@ -3,6 +3,9 @@ body {
   font-family: "raleway", sans-serif;
 }
 
+h2 {
+  font-size: 1.125rem;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -327,6 +330,11 @@ input::placeholder {
   border-radius: 1rem 1rem 0rem 0rem;
   object-fit: cover;
 }
+@media (min-width: 768px) and (max-width: 1024px){
+  .img-host-main {
+  height: 250px;
+  }
+}
 
 .more {
   font-size: 1.2rem;
@@ -427,7 +435,6 @@ input::placeholder {
 .title-card-pop {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1.125rem;
 }
 
 .card-subtitle {
@@ -436,10 +443,10 @@ input::placeholder {
 
 /****** activity ******/
 
-.activity {
+#activity {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 9rem 9rem 9rem 9rem;
+  grid-template-rows: auto 8rem 8rem 8rem 8rem;
   column-gap: 2rem;
   row-gap: 1.5rem;
   padding-left: 2rem;
@@ -448,7 +455,7 @@ input::placeholder {
 }
 
 @media (max-width: 768px) {
-  .activity {
+  #activity {
     padding: 0 1rem 0 1rem;
     row-gap: 2rem;
     grid-template-columns: 1fr;
@@ -468,7 +475,7 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 20%);
+  box-shadow: 1px 2px 20px 5px rgb(0 0 0 / 20%);
   background-size: cover;
   box-sizing: border-box;
   border-radius: 1rem;
@@ -499,7 +506,7 @@ input::placeholder {
 }
 
 .activity1 {
-  grid-row: 2/5;
+  grid-row: 2/6;
 }
 
 @media (max-width: 768px) {
@@ -523,7 +530,7 @@ input::placeholder {
 
 .activity3 {
   grid-column: 2;
-  grid-row: 4/5;
+  grid-row: 6/4;
 }
 
 @media (max-width: 768px) {
@@ -535,7 +542,7 @@ input::placeholder {
 
 .activity4 {
   grid-column: 3;
-  grid-row: 2/5;
+  grid-row: 2/6;
 }
 
 @media (max-width: 768px) {
@@ -547,7 +554,7 @@ input::placeholder {
 
 .activity5 {
   grid-column: 4;
-  grid-row: 2/3;
+  grid-row: 2/4;
 }
 
 @media (max-width: 768px) {
@@ -559,7 +566,7 @@ input::placeholder {
 
 .activity6 {
   grid-column: 4;
-  grid-row: 3/5;
+  grid-row: 4/6;
 }
 
 @media (max-width: 768px) {
